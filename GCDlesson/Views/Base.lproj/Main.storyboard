@@ -37,10 +37,10 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="77.678571428571431"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="Is6-xY-Fnn">
             <objects>
-                <viewController id="NxD-ip-geu" sceneMemberID="viewController">
+                <viewController id="NxD-ip-geu" customClass="SecondViewController" customModule="GCDlesson" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5vt-RO-iut">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,6 +52,9 @@
                                     <constraint firstAttribute="height" constant="374" id="aV7-Hc-pmR"/>
                                 </constraints>
                             </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="heT-V7-rOh">
+                                <rect key="frame" x="197" y="265" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kNw-Dp-vwO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -59,9 +62,15 @@
                             <constraint firstItem="e6k-wk-X6w" firstAttribute="width" secondItem="kNw-Dp-vwO" secondAttribute="width" id="41Z-TO-dMn"/>
                             <constraint firstItem="e6k-wk-X6w" firstAttribute="centerX" secondItem="kNw-Dp-vwO" secondAttribute="centerX" id="7Du-Uk-1wu"/>
                             <constraint firstItem="e6k-wk-X6w" firstAttribute="top" secondItem="kNw-Dp-vwO" secondAttribute="top" id="97o-Yf-BQe"/>
+                            <constraint firstItem="heT-V7-rOh" firstAttribute="centerY" secondItem="e6k-wk-X6w" secondAttribute="centerY" id="IOF-Ch-VqW"/>
+                            <constraint firstItem="heT-V7-rOh" firstAttribute="centerX" secondItem="e6k-wk-X6w" secondAttribute="centerX" id="f6a-L9-PBG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="f75-Tn-WFI"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="heT-V7-rOh" id="qTF-Jf-cJf"/>
+                        <outlet property="imageView" destination="e6k-wk-X6w" id="S8L-yQ-Ijp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qia-FZ-I6x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
